@@ -127,9 +127,9 @@ def save_posts(posts: List[Dict]) -> int:
                 p.get("post_number"),
                 p.get("url"),
                 p.get("username"),
-                p.get("name"),            # name -> display_name
+                p.get("name"),
                 created_at_unix,
-                p.get("cooked"),          # cooked -> body
+                p.get("cooked"),
             ),
         )
         inserted += 1
